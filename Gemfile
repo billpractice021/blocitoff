@@ -20,10 +20,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+# for user authentication. 
 gem 'devise' 
-
-gem 'bootstap-sass'
+# Framework 
+gem 'bootstrap-sass'
+# We are going to use this gem to seed out data
+gem 'faker'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
