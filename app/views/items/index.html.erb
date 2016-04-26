@@ -5,7 +5,8 @@
     <tr>
       <th>Description</th>
       <th>Days Left</th>
-      <th>Completed</th>
+      <th>Mark Complete</th>
+      <th>Edit Item</th>
     </tr>
   </thead>
   <tbody>
@@ -13,7 +14,8 @@
         <tr>
           <td><%= item.description %></td>
           <td><%= rand(2..5) %></td>
-          <td><%= item.complete? %></td>
+          <td><%= link_to "", item, method: :delete, class: 'glyphicon glyphicon-ok' %></td>
+          <td><%= link_to "Edit", edit_item_path(item) %></td>
         </tr>
       <% end %>
      

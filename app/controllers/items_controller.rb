@@ -17,6 +17,33 @@ class ItemsController < ApplicationController
       render :new
     end
   end
+
+  def edit
+     @item = Item.find(params[:id])
+  end
+
+  def update
+     @item = Item.find(params[:id])
+  
+     if @item.update(item_params)
+       flash[:notice] = "Item was updated successfully."
+       redirect_to root_path, notice: 'Item updated'
+     else
+       flash.now[:alert] = "There was an error saving the item"
+       render :edit
+     end
+   end
+
+  def destroy
+    @item = Item.find(params[:id])
+
+    if @item.destroy
+      flash[:notice] = "Item was deleted." 
+    else
+      flash.now[:alert] = "There was an error."
+    end
+    redirect_to items_path
+  end
  
   private
  
