@@ -23,11 +23,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # For user authentication
 gem 'devise' 
 # Framework
-gem 'bootstrap-sass'
+gem 'bootstrap-sass' 
 #time created
-gem 'dotiw'
+gem 'dotiw'       
 
-# Use ActiveModel has_secure_password
+# Use ActiveModel has_secure_password    
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
