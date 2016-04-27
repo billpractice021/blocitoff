@@ -42,7 +42,7 @@ class ItemsController < ApplicationController
     else
       flash.now[:alert] = "There was an error."
     end
-    redirect_to items_path
+    redirect_to items_path  
   end
 
  
